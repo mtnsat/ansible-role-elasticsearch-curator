@@ -1,0 +1,18 @@
+---
+actions:
+  0:
+    description: >-
+      Reindex all daily metricbeats from last month into metricbeat-YYYY.MM
+    action: reindex
+    options:
+      wait_interval: 9
+      max_wait: -1
+      request_body:
+        source:
+          index: REINDEX_SELECTION
+        dest:
+          index: acg-microbeat-2019.jan
+      filters:
+      - filetype: pattern
+        kind: prefix
+        value: acg-microbeat-2019.01.*
