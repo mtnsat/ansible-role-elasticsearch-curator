@@ -11,8 +11,8 @@ actions:
         source:
           index: REINDEX_SELECTION
         dest:
-          index: acg-microbeat-2019.01
+          index: acg-microbeat-2019.{{ last_month }}
       filters:
       - filetype: pattern
         kind: prefix
-        value: acg-microbeat-2019.01.*
+        value: acg-microbeat-2019.{{ last_month }}.*
