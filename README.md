@@ -83,7 +83,6 @@ This YAML goes into the file `~/.curator/action.yml` and defines the actions Cur
     elasticsearch_curator_pip_package: 'python-pip'
 
 System pip package which needs to be installed. For newer OSes or when using Python 3, you may need to override this and change it to `python3-pip`.
->>>>>>> upstream/master
 
 ## Dependencies
 
